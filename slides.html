@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Was ist Open Source, wie funktioniert das?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif';}
+      h1, h2, h3, h4 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-help {
+        background-color: #000;
+      }
+      .remark-slide .remark-slide-content {
+        background-image: url(img/logos/fossgis.png);
+        background-position: top 10px right 20px;
+        background-repeat: no-repeat;
+        background-size: auto 50px;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        width: 50%;
+        float: left;
+      }
+      .right-column {
+        width: 50%;
+        float: right;
+      }
+
+      .info {
+        background-color: #d9edf7;
+        border: 1px solid #bce8f1;
+        color: #31708f;
+        padding: 1em;
+      }
+
+      .projects {
+        float: left;
+        padding: 30px;
+        text-align: center;
+      }
+      .clear {
+        clear: both;
+      }
+      </style>
+  </head>
+  <body>
+    <textarea id="source">
+      class: center, middle, title
+
+      # Was ist Open Source, wie funktioniert das?
+
+      ## Teil 2:
+      ## Ein Blick auf Daten und Software
+
+      .small[FOSSGIS Konferenz 2015, Münster]
+      <br>
+      .small[Astrid Emde &amp; Dominik Helle]
+
+      ---
+      # Agenda
+
+      - OSGeo Live
+
+      - Software
+        - DesktopGIS
+        - WebGIS
+        - Kartenserver & Kartenproxy
+        - Geo-Bibliotheken
+        - Datenbanken
+
+      - Daten:
+        - OpenStreetMap
+
+
+      ---
+      class: center, middle, title
+
+      # OSGeo Live
+
+      ---
+      .center[<img src="img/logos/osgeolive.png" width="60%">]
+
+      # Was ist OSGeo Live?
+
+      - kein klassiches Softwareprojekt
+
+      - Sammlung von über 50 Open-Source-Software-Projekten
+
+      - Bereitstellungen von Testdatensätzen u.a. Auszug von OpenStreetMap
+
+      - Mehrsprachige Dokumentation
+
+      --
+
+      .center[### &rarr; Software testen, ohne dass eine Installation notwendig ist]
+
+      <!--
+          - wird von einer großen Anzahl von frewilligen verwaltet
+          - keine kommerziellen Interessen
+      -->
+
+      ---
+      .center[<img src="img/logos/osgeolive.png" width="60%">]
+
+      # Was ist OSGeo Live?
+
+      - Komplettes Betriebssystem
+
+      - Alle Softwareomponenten installiert
+
+      - Regelmässig neue Version
+
+      ### Schon Interesse?
+
+      - Nach dem Vortrag zum FOSSGIS Stand
+
+      - Eigener USB Stick oder OSGeo Live für 7 Euro!
+
+      ---
+      class: center, middle, title
+
+      # Die Praxis
+
+      <!-- Starten der Live DVD und zeigen mit einigen Klicks was so drauf ist -->
+      <!-- Aber was ist den nun eigetnlich a vorhanden?  -->
+      ---
+      # Die Software
+
+      - DesktopGIS
+
+      - WebGIS
+
+      - Kartenserver & Kartenproxy
+
+      - Geo-Bibliotheken
+
+      - Datenbanken
+
+      <!--
+          Software unterteilt sich in verschiedene Kategorien.
+          Deutlich wird aber, dass jedes "Geo"-Problem auch mit Open Source Software gelöst werden kann
+          Kurzen überblick über die Programme verschaffen.
+      -->
+      ---
+      # Desktop GIS
+
+      <div class="projects">
+        QGIS<br/>
+        <img src="img/project_logos/logo-QGIS.png" width="100"/>
+      </div>
+      <div class="projects">
+        GRASS GIS<br/>
+        <img src="img/project_logos/logo-GRASS.png" width="100"/>
+      </div>
+      <div class="projects">
+        gvSIG<br/>
+        <img src="img/project_logos/logo-gvSIG.png" width="120"/>
+      </div>
+      <div class="projects">
+        uDig<br/>
+        <img src="img/project_logos/logo-uDig.png" width="120"/>
+      </div>
+
+      <div class="clear projects">
+        Kosmo<br/>
+        <img src="img/project_logos/logo-Kosmo.png" width="200"/>
+      </div>
+      <div class="projects">
+        OpenJUMP<br/>
+        <img src="img/project_logos/logo-openjump.png" width="120"/>
+      </div>
+      <div class="projects">
+        SAGA<br/>
+        <img src="img/project_logos/logo-saga.png" width="120"/>
+      </div>
+
+      <!--
+        Einige wollen wir Ihnen ganz kurz vorstellen
+        und sie auf Vorträge im Programm hinweisen  -->
+      ---
+
+      # Desktop GIS: QGIS
+
+      .center[<img src="img/screenshots/qgis.png" width="60%">]
+
+      .center.info["QGIS-Block" am **Mittwoch ab 15:30** in Raum S10]
+
+      <!--
+          - Das wohl aktuell populärste GIS System
+          - Aktive Weiterentwicklung
+      -->
+
+      <!--
+          Es gibt soviele Voträge die sich mit QGIS beschäftigen, dass man die hier gar nicht auflisten kann
+      -->
+
+      ---
+
+      # Desktop GIS: GRASS GIS
+
+      .center[<img src="img/screenshots/grass.png" width="60%">]
+
+      .center.info["GRASS-Block" am **Donnerstag ab 09:00** in Raum S2]
+
+      <!-- Es gibt soviele Voträge die sich mit QGIS beschäftigen, dass man die hier gar nicht auflisten kann  -->
+
+      ---
+      # Web GIS
+        <div class="projects">
+          OpenLayers<br/>
+          <img src="img/project_logos/logo-OpenLayers.png" width="120"/>
+        </div>
+        <div class="projects">
+          Leaflet<br/><img src="img/project_logos/logo-leaflet.png" width="120"/>
+        </div>
+
+        <div class="projects">
+          Cesium<br/><img src="img/project_logos/logo-cesium.png" width="120"/>
+        </div>
+
+        <div class="projects">
+          Geomajas<br/><img src="img/project_logos/logo-geomajas.png" width="120"/>
+        </div>
+
+        <div class="projects clear">
+          Mapbender<br/><img src="img/project_logos/logo-Mapbender3.png" width="120"/>
+        </div>
+
+        <div class="projects">
+          GeoMOOSE<br/><img src="img/project_logos/logo-geomoose.png" width="120"/>
+        </div>
+
+        <div class="projects">
+          Cartaro<br/><img src="img/project_logos/logo-cartaro.png" width="120"/>
+        </div>
+        <div class="projects">
+          GeoNode<br/><img src="img/project_logos/logo-geonode.png" width="120"/>
+        </div>
+      <!--
+          Bibliotheken zum Anzeigen von Karten
+          Auch Web GIS Frameworks: Erstellen von komplexen Geoportalen oder Kartenanwendungen bis hin zur Benutzerverwaltung
+      -->
+      ---
+
+      # Web GIS: OpenLayers
+
+      .center[<img src="img/screenshots/openlayers.png" width="80%">]
+
+      .center.info["OpenLayers-Block" am **Donnerstag ab 09:00** in Raum S10]
+
+      ---
+
+      # Web GIS: Cesium
+
+      .center[<img src="img/screenshots/cesium.png" width="80%">]
+
+      .center.info[Cesium am **Freitag um 11:30** in Raum S10]
+
+      ---
+
+      # Web GIS: Mapbender
+
+      .center[<img src="img/screenshots/mapbender3.png" width="70%">]
+
+      .center.info[Mapbender am **Donnerstag um 16:30** in Raum S2]
+
+      ---
+      # Serverkopmonenten
+      <div class="projects">
+        GeoServer<br/>
+        <img src="img/project_logos/logo-GeoServer.png" width="80"/>
+      </div>
+      <div class="projects">
+        MapServer<br/>
+        <img src="img/project_logos/logo-mapserver-new.png" width="80"/>
+      </div>
+      <div class="projects">
+        Mapnik<br/>
+        <img src="img/project_logos/logo-mapnik.png" width="80"/>
+      </div>
+      <div class="projects">
+        MapProxy<br/>
+        <img src="img/project_logos/logo-mapproxy.png" width="80"/>
+      </div>
+
+      <div class="projects clear">
+        EOxServer<br/>
+        <img src="img/project_logos/logo-eoxserver.png" width="80"/>
+      </div>
+      <div class="projects">
+        GeoNetwork<br/>
+       <img src="img/project_logos/logo-GeoNetwork.png" width="80"/>
+      </div>
+      <div class="projects">
+        pycsw<br/>
+        <img src="img/project_logos/logo-pycsw.png" width="80"/>
+      </div>
+      <div class="projects">
+        deegree<br/>
+        <img src="img/project_logos/logo-deegree.png" width="80"/>
+      </div>
+
+      <div class="projects clear">
+        QGIS Server<br/>
+        <img src="img/project_logos/logo-QGIS.png" width="80"/>
+      </div>
+      <div class="projects">
+        52North WPS/SOS<br/>
+        <img src="img/project_logos/logo_52North_160.png" width="80"/>
+      </div>
+      <div class="projects">
+        TinyOWS<br/>
+        <img src="img/project_logos/logo-TinyOWS.png" width="80"/>
+      </div>
+      <div class="projects">
+        Zoo Project<br/>
+        <img src="img/project_logos/logo-Zoo.png" width="80"/>
+      </div>
+
+      <!--
+          Egal ob in Web oder Desktop, man benötigt Software und Bibliotheken, welche die Karten erstellt und visualiert und über Standardschnittstellen zur Verfügung stellt
+
+      -->
+
+      ---
+
+      # Serverkopmonenten: MapServer
+
+      .center[<img src="img/screenshots/mapserver.png" width="60%">]
+
+      .center.info[MapServer am **Donnerstag um 11:15** in Raum S10]
+
+      ---
+
+      # Serverkopmonenten: Mapnik
+
+      .center[<img src="img/screenshots/mapnik.png" width="70%">]
+
+      .center.info[Mapnik am **Donnerstag um 11:45** in Raum S10]
+
+      ---
+
+
+      # Serverkopmonenten: Deegree
+
+      .center[<img src="img/screenshots/deegree.png" width="60%">]
+
+      .center.info[Deegree Anwendertreffen am **Donnerstag um 18:00** in Raum S]
+
+      ---
+
+      # Serverkopmonenten: GeoServer
+
+      .center[<img src="img/screenshots/geoserver.png" width="70%">]
+
+      .center.info[GeoServer am **Donnerstag um 12:15** in Raum S10]
+
+      ---
+
+      # Serverkopmonenten: 52North WPS/SOS
+
+      .center[<img src="img/screenshots/52north.png" width="60%">]
+
+      .center.info[Mapbender am **Donnerstag um 17:00** in Raum S2]
+
+      ---
+
+      # Geo-Bibliotheken
+
+      <div class="projects">
+        GDAL/OGR<br/>
+        <img src="img/project_logos/logo-GDAL.png" width="100"/>
+      </div>
+      <div class="projects">
+        GeoTools<br/><img src="img/project_logos/logo-GeoTools.png" width="100"/>
+      </div>
+      <div class="projects">
+        GEOS<br/><img src="img/project_logos/logo-GEOS.png" width="100"/>
+      </div>
+      <div class="projects clear">
+        MetaCRS Proj4<br/><img src="img/project_logos/logo-metacrs.png" width="100"/>
+      </div>
+      <div class="projects">
+        libLAS<br/><img src="img/project_logos/logo-libLAS.png" width="100"/>
+      </div>
+      <div class="projects">
+        Iris<br/><img src="img/project_logos/logo-iris.png" width="100"/>
+      </div>
+      <div class="projects">
+        JTS<br/><img src="img/project_logos/jts_project.png" width="100"/>
+      </div>
+      ---
+
+      # Datenbanken
+
+      <div class="projects">
+        PostGIS<br/>
+        <img src="img/project_logos/logo-PostGIS.png"/>
+      </div>
+      <div class="projects">
+        SpatialLite<br/>
+        <img src="img/project_logos/logo-spatialite.png"/>
+      </div>
+      <div class="projects">
+        rasdaman<br/>
+        <img src="img/project_logos/logo-rasdaman.png"/>
+      </div>
+      <div class="projects">
+        pgRouting<br/>
+        <img src="img/project_logos/logo-pgRouting.png"/>
+      </div>
+      <!--
+          Bibliotheken zum Anzeigen von Karten
+          Auch Web GIS Frameworks: Erstellen von komplexen Geoportalen oder Kartenanwendungen bis hin zur Benutzerverwaltung
+      -->
+
+      ---
+
+      # Datenbanken: PostGIS
+
+      .center[<img src="img/screenshots/postgis.png" width="65%">]
+
+      .center.info[PostGIS am **Donnerstag um 15:00** in Raum S10]
+
+      ---
+
+      # PostGIS: pgRouting
+
+      .center[<img src="img/screenshots/pgrouting.png" width="65%">]
+
+      .center.info[pgRouting am **Donnerstag um 14:30** in Raum S10]
+
+      ---
+
+      class: middle, center, title
+
+      # Software ist ohne Daten nutzlos
+
+      ---
+
+      class: center, middle, title
+
+      # OpenStreetMap-Projekt
+
+      <!-- Hinweis auf weitere ofenene Datenquellen z.B. Natural Data -->
+      ---
+
+      # Was ist OpenStreetMap überhaupt?
+
+      .center[<img src="img/screenshots/osm.png" width="70%">]
+
+      --
+
+       #.center[Nur eine Karte?]
+
+      <!-- Auf den ersten Blick nur eine Karte im Internet -->
+      ---
+
+      # Was ist OpenStreetMap überhaupt?
+
+      - Sammlung freier Daten mit Ortsbezug
+
+      - wurde 2004 in Großbritannien gegründet
+
+      - Ziel, weltweite, freie Kartendaten
+
+      ---
+      class: center, middle
+
+        ##OpenStreetMap will für Kartendaten das sein, was die Wikipedia für enzyklopädisches Wissen ist.
+
+      ---
+      # Wieso brauchen wir OpenStreetMap?
+
+      - freie Daten ermöglichen das Erstellen feier KArten
+
+      - aktuelle Daten auch ohne kommerzielles Interesse
+
+      - Details die viele kommerzielle Anbieter nicht haben
+
+      - Platz für neue Ideen
+
+      ---
+
+      # Dankeschön
+
+      .left-column[
+        Astrid Emde<br>
+        `astrid.emde@fossgis.de`<br>
+        `@aemde`
+      ]
+
+      .right-column[
+        Dominik Helle<br>
+        `dominik.helle@fossgis.de`<br>
+        `@geododo`
+      ]
+
+      ---
+      class: center, middle
+      # Fragen?
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
