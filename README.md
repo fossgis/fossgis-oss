@@ -1,6 +1,6 @@
 # fossgis-oss
 
-Presentation for FOSSGIS Conferenz 2015
+Starting Presentation FOSSGIS Conferences 
 
 - Work in progress
 
